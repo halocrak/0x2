@@ -34,6 +34,7 @@ def input_(dork):
     helium.write(dork)
     helium.press(ENTER)
     time.sleep(2)
+ 
 
 def re_enter():
     global prev_url
@@ -116,6 +117,7 @@ def main():
         for i in clean(final):
             file1.write(i.strip()+'\n')
         file1.close()
+        os.system("bash nj7.sh")
     else:
         for i in clean(final):
             print(i)
